@@ -68,7 +68,7 @@ pcall(function()
 
 	-- Scripts:
 
-checking = TextLabel_2.Text
+checking = TextButton
 
 		checking.Text = 'Hi'
 
