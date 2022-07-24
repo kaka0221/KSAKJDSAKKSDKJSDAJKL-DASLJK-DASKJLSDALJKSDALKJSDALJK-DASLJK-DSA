@@ -15,7 +15,8 @@ Main:Textbox("Whitelist", "Your key here", true, function(t)
 end)
 
 Main:Button("Check key", function()
-	if n == 'BeT4_TEsteR_D34TH_3V1L_X' then
+	if n == 'BeT4_TEsteR_D34TH_3V1L_X' 
+	then
 		DiscordLib:Notification("D34TH_3V1L X", "Correct Key", "Okay")
 		wait(8)
 		game:GetService("CoreGui").Discord:Remove()
