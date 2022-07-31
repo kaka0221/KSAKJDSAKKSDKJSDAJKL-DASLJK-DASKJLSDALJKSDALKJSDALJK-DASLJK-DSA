@@ -15,7 +15,7 @@ Main:Textbox("Whitelist", "Your key here", true, function(t)
 end)
 
 Main:Button("Check key", function()
-	if n == 'BeT4_TEsteR_D34TH_3V1L_X' 
+	if n == 'D34TH_3V1L_X_tH3VesT3cR1pT_089789' 
 	then
 		DiscordLib:Notification("D34TH_3V1L X", "Correct Key", "Okay")
 		wait(3)
