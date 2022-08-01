@@ -7,7 +7,7 @@
 	end
 
 
-if key == 'D34TH_3V1L_X_tH3VesT3cR1pT_089789' then
+if key == 'D34TH_3V1L_X_dUmP_y3SUare_45980' then
 	getgenv().correctkey = false
 
 else
