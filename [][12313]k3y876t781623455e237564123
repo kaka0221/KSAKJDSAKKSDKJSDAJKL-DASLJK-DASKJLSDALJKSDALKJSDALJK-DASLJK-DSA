@@ -13,6 +13,6 @@ if key == 'D34TH_3V1L_X_tH3VesT3cR1pT_089789' then
 else
 
 getgenv().correctkey = true
-setclipboard("https://discord.gg/hDFa4Y5bhB")
+setclipboard("https://discord.gg/Q6hPQ89hft")
 announce("Incorrect key", "join the discord to get the key. The link has been copied to your keyboard", 30)
 end
