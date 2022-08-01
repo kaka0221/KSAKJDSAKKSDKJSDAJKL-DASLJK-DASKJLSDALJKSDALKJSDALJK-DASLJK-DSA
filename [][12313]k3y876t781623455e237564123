@@ -1,1 +1,3 @@
-D34TH_3V1L_X_tH3VesT3cR1pT_089789
+if key == 'D34TH_3V1L_X_tH3VesT3cR1pT_089789' then
+	getgenv().correctkey = true
+end
